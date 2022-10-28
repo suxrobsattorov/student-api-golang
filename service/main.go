@@ -17,6 +17,10 @@ func main() {
 
 	app := fiber.New()
 
+	app.Get("/healthcheck", func(c *fiber.Ctx) error {
+		return c.SendString("OK")
+	})
+
 	var students []Student
 
 	rows := db()
