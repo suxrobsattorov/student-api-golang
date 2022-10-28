@@ -3,7 +3,6 @@ package main
 import (
 	_ "database/sql"
 	"github.com/gofiber/fiber/v2"
-	"log"
 )
 
 type Student struct {
@@ -37,5 +36,5 @@ func main() {
 		return ctx.JSONP(students)
 	})
 
-	log.Fatal(app.Listen(":8081"))
+	//log.Fatal(app.Listen(":8081"))
 }
