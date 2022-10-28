@@ -7,11 +7,11 @@ import (
 )
 
 const (
-	host     = "localhost"
+	host     = "ec2-34-247-72-29.eu-west-1.compute.amazonaws.com"
 	port     = 5432
-	user     = "GoDbUser"
-	password = "root"
-	dbName   = "Go-test-db"
+	user     = "sxjmccanruzojc"
+	password = "6a47278475f524aec7cb82881271dc283eb1d5476a09d1ce16bafc1bb0d75231"
+	dbName   = "decs17qdklniph"
 )
 
 func db() *sql.Rows {
