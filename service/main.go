@@ -36,5 +36,6 @@ func main() {
 		return ctx.JSONP(students)
 	})
 
+	app.Use()
 	//log.Fatal(app.Listen(":8081"))
 }
